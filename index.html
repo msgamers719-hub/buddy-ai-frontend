@@ -91,7 +91,8 @@ async function send() {
 
   addMsg("BuDDy is typing...", "bot");
 
-  const res = await fetch("https://YOUR-RENDER-BACKEND/chat", {
+  const res = await fetch("https://buddy-ai-backend-ojjy.onrender.com/chat", {
+
     method: "POST",
     headers: {"Content-Type": "application/json"},
     body: JSON.stringify({ message: text })
